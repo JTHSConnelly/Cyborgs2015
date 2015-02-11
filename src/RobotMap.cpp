@@ -56,30 +56,30 @@ void RobotMap::init() {
 	lw->AddActuator("DriveTrain", "FrontLeft", driveTrainFrontLeft);
 	driveTrainFrontLeft->SetContinuous(true);
 	driveTrainFrontLeft->SetAbsoluteTolerance(0.2);
-    driveTrainFrontLeft->SetInputRange(0.0, 5.0);
-    driveTrainFrontLeft->SetOutputRange(-0.75, 0.75);
+ 	driveTrainFrontLeft->SetInputRange(0.0, 5.0);
+    	driveTrainFrontLeft->SetOutputRange(-0.75, 0.75);
 	
-    driveTrainFrontRightPos = new AnalogInput(2);
+    	driveTrainFrontRightPos = new AnalogInput(2);
 	lw->AddSensor("DriveTrain", "FrontRightPos", driveTrainFrontRightPos);
 	driveTrainFrontRightSteer = new CANTalon(4);
 	driveTrainFrontRight = new PIDController(0.35, 0.0, 0.0,/* F: 0.0, */ driveTrainFrontRightPos, driveTrainFrontRightSteer, 0.02);
 	lw->AddActuator("DriveTrain", "FrontRight", driveTrainFrontRight);
 	driveTrainFrontRight->SetContinuous(true);
 	driveTrainFrontRight->SetAbsoluteTolerance(0.2);
-    driveTrainFrontRight->SetInputRange(0.0, 5.0);
-    driveTrainFrontRight->SetOutputRange(-0.75, 0.75);
+    	driveTrainFrontRight->SetInputRange(0.0, 5.0);
+    	driveTrainFrontRight->SetOutputRange(-0.75, 0.75);
 	
-    driveTrainRearLeftPos = new AnalogInput(3);
+    	driveTrainRearLeftPos = new AnalogInput(3);
 	lw->AddSensor("DriveTrain", "RearLeftPos", driveTrainRearLeftPos);
 	driveTrainRearLeftSteer = new CANTalon(6);
 	driveTrainRearLeft = new PIDController(0.35, 0.0, 0.0,/* F: 0.0, */ driveTrainRearLeftPos, driveTrainRearLeftSteer, 0.02);
 	lw->AddActuator("DriveTrain", "RearLeft", driveTrainRearLeft);
 	driveTrainRearLeft->SetContinuous(true);
 	driveTrainRearLeft->SetAbsoluteTolerance(0.2);
-    driveTrainRearLeft->SetInputRange(0.0, 5.0);
-    driveTrainRearLeft->SetOutputRange(-0.75, 0.75);
+    	driveTrainRearLeft->SetInputRange(0.0, 5.0);
+    	driveTrainRearLeft->SetOutputRange(-0.75, 0.75);
 	
-    driveTrainRearRightPos = new AnalogInput(4);
+    	driveTrainRearRightPos = new AnalogInput(4);
 	lw->AddSensor("DriveTrain", "RearRightPos", driveTrainRearRightPos);
 	driveTrainRearRightSteer = new CANTalon(8);
 	driveTrainRearRight = new PIDController(0.35, 0.0, 0.0,/* F: 0.0, */ driveTrainRearRightPos, driveTrainRearRightSteer, 0.02);
