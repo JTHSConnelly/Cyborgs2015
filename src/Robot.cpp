@@ -46,16 +46,6 @@ void Robot::RobotInit() {
 	driveTrain->rearLeft->Enable();
 	driveTrain->rearRight->Enable();
 	
-	
-//	autoChooser = new SendableChooser();
-//	autoChooser->AddObject("01. Shoot 1 From Side", (void*)fire1Side);
-//	autoChooser->AddObject("02. Shoot 1 From Center", (void*)fire1Center);
-//	autoChooser->AddDefault("01. Shoot 2 Center", (void*)fire2DriveForward);
-//	autoChooser->AddObject("04. Shoot 2 Wide Center", (void*)fire2DriveForwardWide);
-//	autoChooser->AddObject("05. Shoot 2 From Side", (void*)fire2Side);
-//	autoChooser->AddObject("02. Shoot 3 From Center", (void*)fire3FromCenter);
-//	SmartDashboard::PutData("Autonomous Chooser", autoChooser);
-	
 	x = 0;
 	y = 0;
 	twist = 0;
