@@ -5,12 +5,37 @@ Elevator::Elevator() :
 		Subsystem("Elevator")
 {
 		elevatorMotor = RobotMap::elevatorMotorControl;
+		topSwitch = new DigitalInput(1);
+		bottomSwitch = new DigitalInput(2);
+		counterTop = new Counter(topSwitch);
+		counterBottom = new Counter(bottomSwitch);
+		
 }
 
 void Elevator::InitDefaultCommand()
 {
 	// Set the default command for a subsystem here.
 	//SetDefaultCommand(new MySpecialCommand());
+}
+
+void Elevator::IsTopSwitchSet()
+{
+	return counterTop.Get() > 0;
+}
+
+void Elevator::IsBottomSwitchSet()
+{
+	return counterTop.Get() > 0;
+}
+
+void Elevator::InitializeTop()
+{
+	counterTop.Reset();
+}
+
+void Elevator::InitialzeBottom()
+{
+	counterBottom.Reset();
 }
 
 void Elevator::Up()
