@@ -10,10 +10,10 @@ private:
 	// It's desirable that everything possible under private except
 	// for methods that implement subsystem capabilities
 	CANTalon* elevatorMotor;
-	Counter* counterTop;
-	Counter* counterBottom;
-	DigitalInput* topSwitch;
-	DigitalInput* bottomSwitch;
+	Counter counterTop;
+	Counter counterBottom;
+	DigitalInput topSwitch;
+	DigitalInput bottomSwitch;
 public:
 	Elevator();
 	void Up();
