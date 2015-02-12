@@ -35,5 +35,5 @@ void ElevatorDown::End()
 // subsystems is scheduled to run
 void ElevatorDown::Interrupted()
 {
-
+	Robot::elevator->Stop();
 }
