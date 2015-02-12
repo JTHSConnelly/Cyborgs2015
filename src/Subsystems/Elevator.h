@@ -16,6 +16,8 @@ private:
 	DigitalInput bottomSwitch;
 public:
 	Elevator();
+	bool IsBottomSwitchSet();
+	bool IsTopSwitchSet();
 	void Up();
 	void Down();
 	void Stop();
