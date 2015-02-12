@@ -13,6 +13,7 @@ private:
 	Counter* counterTop;
 	Counter* counterBottom;
 
+
 public:
 	Elevator();
 	bool IsBottomSwitchSet();
