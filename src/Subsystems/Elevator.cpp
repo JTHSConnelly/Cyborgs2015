@@ -18,12 +18,12 @@ void Elevator::InitDefaultCommand()
 	//SetDefaultCommand(new MySpecialCommand());
 }
 
-void Elevator::IsTopSwitchSet()
+bool Elevator::IsTopSwitchSet()
 {
 	return counterTop.Get() > 0;
 }
 
-void Elevator::IsBottomSwitchSet()
+bool Elevator::IsBottomSwitchSet()
 {
 	return counterBottom.Get() > 0;
 }
