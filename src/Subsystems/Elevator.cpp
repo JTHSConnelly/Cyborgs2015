@@ -25,7 +25,7 @@ void Elevator::IsTopSwitchSet()
 
 void Elevator::IsBottomSwitchSet()
 {
-	return counterTop.Get() > 0;
+	return counterBottom.Get() > 0;
 }
 
 void Elevator::InitializeTop()
